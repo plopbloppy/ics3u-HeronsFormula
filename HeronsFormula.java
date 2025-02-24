@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class HeronsFormula {
     public static void main(String[] args) throws Exception {
+
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Please enter side a:");
         double a = keyboard.nextDouble();
@@ -11,7 +12,7 @@ public class HeronsFormula {
         double c = keyboard.nextDouble();
         keyboard.close();
 
-        double area = Math.sqrt(4 * a * a * b * b - Math.pow((a * a + b * b - c * c), 2)) / 4;
+        double area = Math.sqrt(4 * a * a * b * b - Math.pow(a * a + b * b - c * c, 2)) / 4;
         System.out.println("The area of the triangle is " + area + " units squared.");
     }
 }
